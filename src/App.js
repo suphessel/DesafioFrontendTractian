@@ -15,7 +15,7 @@ const App = () => {
 
   return (
     <AppContainer>
-       <Header />
+       <Header/>
       <LandingPage/>
       <Footer/>
     </AppContainer>

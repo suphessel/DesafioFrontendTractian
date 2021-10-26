@@ -327,7 +327,7 @@ export const TopPage = styled.div`
   width: 100%;
   height: auto;
   font-size: 100%;
-  a {
+  button {
     color: white;
     text-decoration: none;
     color: #1e90ff;
