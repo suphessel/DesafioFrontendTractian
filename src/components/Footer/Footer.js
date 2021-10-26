@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useEffect} from "react";
 import {
   ContainerFooter,
   Business,
@@ -33,8 +33,18 @@ import instagram from "../../assets/images/instagram.png";
 import linkedin from "../../assets/images/linkedin.png";
 import facebook from "../../assets/images/facebook.png";
 import youtube from "../../assets/images/youtube.png";
+import {Button} from "@material-ui/core"
 
 const Footer = () => {
+
+  useEffect(() => {
+    onClickScroll()
+  }, [])
+
+  const onClickScroll = () => {
+    window.scrollTo(0, 0)
+  }
+
   return (
     <ContainerFooter style={{ borderTop: "2px solid #1e90ff" }}>
       <Business>
@@ -93,7 +103,7 @@ const Footer = () => {
           </LogoYtube>
         </SocialMedia>
         <TopPage>
-          <a href="Header.js">Voltar ao topo ↑</a>
+          <Button onClick={onClickScroll}>Voltar ao topo ↑</Button> 
         </TopPage>
       </LogoTractian>
       <Line></Line>
@@ -109,7 +119,7 @@ const Footer = () => {
             {" "}
             <a
               href="https://tractian.com/politica-de-privacidade"
-              onclick="myFunction()"
+              onclick="privacypolicy()"
             >
               Política de Privacidade
             </a>
