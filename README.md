@@ -2,7 +2,7 @@
 
 ## Link surge: 
 
-https://faulty-tooth.surge.sh/
+https://tart-rule.surge.sh/
 
 ### Images
 
