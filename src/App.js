@@ -1,5 +1,3 @@
-// import logo from './logo.svg';
-// import './App.css';
 import React from 'react';
 import Header from "./components/Header/Header";
 import Footer from "./components/Footer/Footer";
@@ -11,18 +9,15 @@ const AppContainer = styled.div`
  display: flex;
   flex-direction: column;
 background-color: green;
-/* height: 1px; */
 
 `
 const App = () => {
 
   return (
     <AppContainer>
-     
        <Header />
       <LandingPage/>
       <Footer/>
-    
     </AppContainer>
   );
 }
